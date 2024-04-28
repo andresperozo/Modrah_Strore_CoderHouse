@@ -216,8 +216,12 @@ footer {
     footer section span {
       color: white;
       margin-top: 15px; }
-    footer section div img {
-      margin-left: 25px; }
+    footer section div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: .625rem;
+      justify-content: center; }
 
 .contactenos {
   margin: 15px 40px;
@@ -304,11 +308,12 @@ footer {
     text-align: left; }
 
 .accesorios {
+  padding: 1.5rem;
   background-color: #FFC6E8;
   width: 100%; }
   .accesorios h2 {
+    padding-bottom: 1.25rem;
     text-align: center;
-    padding-top: 20px;
     font-family: "Italiana";
     font-style: normal;
     font-weight: 800;
@@ -363,7 +368,7 @@ footer {
         margin: 12px; }
 
 .fondo {
-  display: flex;
+  overflow: auto;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -372,9 +377,12 @@ footer {
     background-color: #2f2f2f76;
     border-radius: 55px;
     color: white;
-    margin: 25px;
-    display: flex;
-    justify-content: center; }
+    margin: 1.5rem;
+    text-align: center;
+    font-family: "Italiana";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px; }
 
 .articulos article {
   display: flex;
@@ -382,8 +390,10 @@ footer {
   color: white;
   background-color: #2f2f2f76;
   margin: 75px;
-  width: fit-content;
-  border-radius: 55px; }
+  border-radius: 55px;
+  overflow: hidden; }
+  .articulos article img {
+    object-fit: cover; }
   .articulos article p {
     margin: 25px;
     text-align: center;
@@ -431,7 +441,9 @@ footer {
     gap: 30px;
     padding: 10px; }
   .invierno2 p {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .articulos article p {
+    font-size: 20px; } }
 
 @media (max-width: 880px) {
   nav div ul {
@@ -499,11 +511,8 @@ footer {
     .destacadosmain .card {
       margin-inline: 15px; }
   .accesorios2 {
-    grid-template-columns: 200px;
     gap: 20px;
     padding: 10px; }
-    .accesorios2 div {
-      object-fit: cover; }
   .invierno {
     flex-direction: column;
     align-items: center;
@@ -519,8 +528,23 @@ footer {
   footer section {
     flex-direction: column;
     align-items: center;
-    padding-top: 10px; } }
+    padding-top: 10px; }
+  .fondo h2 {
+    font-size: 28px; }
+  .articulos article {
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 40px; }
+    .articulos article p {
+      font-size: 17px; } }
 
-@media (max-width: 424px) {
+@media (max-width: 500px) {
   .inviernoimg {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .accesorios2 div {
+    width: 100%;
+    overflow: hidden; }
+  .articulos article {
+    margin: 20px; }
+  .fondo h2 {
+    font-size: 24px; } }

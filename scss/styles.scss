@@ -17,11 +17,13 @@ $border-color_1: black;
 
 @import "https://fonts.googleapis.com/css2?family=Italiana&family=Koulen&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Kosugi&display=swap";
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 h1 {
 	text-align: center;
 	background-color: $background-color_1;
@@ -31,6 +33,7 @@ h1 {
 	font-weight: 400;
 	font-size: 3rem;
 }
+
 nav {
 	div {
 		background-color: $background-color_2;
@@ -40,6 +43,7 @@ nav {
 		justify-content: space-between;
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
+
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -48,10 +52,12 @@ nav {
 			align-items: center;
 		}
 	}
+
 	img {
 		width: 1.875rem;
 		margin: 10px;
 	}
+
 	ul {
 		li {
 			a {
@@ -64,19 +70,23 @@ nav {
 			}
 		}
 	}
+
 	#toggle {
 		display: none;
 	}
+
 	label {
 		display: none;
 	}
 }
+
 .seccion1 {
 	background-color: $background-color_3;
 	display: grid;
-	grid-template-columns: repeat(8,1fr);
-	grid-template-rows: repeat(4,1fr);
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 }
+
 .ropaParaTi {
 	grid-column: 1 / 5;
 	grid-row: 1/3;
@@ -93,6 +103,7 @@ nav {
 	margin-right: 150px;
 	order: 1;
 }
+
 .parrafo {
 	font-family: $font-family_2;
 	font-style: normal;
@@ -104,6 +115,7 @@ nav {
 	margin-top: 50px;
 	margin-right: 80px;
 }
+
 .boton {
 	grid-column: 3/4;
 	grid-row: 4;
@@ -119,6 +131,7 @@ nav {
 	font-weight: 800;
 	font-size: 1.0938rem;
 }
+
 .imagen {
 	grid-column: 4 / 9;
 	grid-row: 1 / 5;
@@ -126,8 +139,10 @@ nav {
 	height: 100%;
 	object-fit: cover;
 }
+
 .seccion2 {
 	background-color: $background-color_4;
+
 	h2 {
 		font-family: $font-family_2;
 		font-style: normal;
@@ -136,12 +151,14 @@ nav {
 		text-align: center;
 		padding-top: 20px;
 	}
+
 	.topDesings {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
 	}
 }
+
 .card {
 	margin-top: 25px;
 	margin-bottom: 25px;
@@ -150,18 +167,22 @@ nav {
 	border: 10px solid white;
 	border-radius: 25px;
 	overflow: hidden;
+
 	.vestido1 {
 		width: 300px;
 		height: auto;
 	}
+
 	.vestido2 {
 		width: 266px;
 		height: auto;
 	}
+
 	.vestido3 {
 		width: 267px;
 		height: auto;
 	}
+
 	div {
 		padding-left: 20px;
 		padding-top: 10px;
@@ -174,18 +195,21 @@ nav {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
+
 		h3 {
 			font-size: 24px;
 			font-family: $font-family_4;
 			font-style: normal;
 			font-weight: 500;
 		}
+
 		p {
 			font-size: 24px;
 			font-family: $font-family_4;
 			font-style: normal;
 			font-weight: 500;
 		}
+
 		button {
 			width: 130px;
 			height: 45px;
@@ -200,12 +224,15 @@ nav {
 			font-weight: 500;
 		}
 	}
+
 	.fav {
 		display: none;
 	}
 }
+
 .seccion3 {
 	background-color: $background-color_1;
+
 	h2 {
 		font-family: $font-family_3;
 		font-style: normal;
@@ -214,6 +241,7 @@ nav {
 		text-align: right;
 		margin: 20px 150px;
 	}
+
 	article {
 		h3 {
 			font-family: $font-family_3;
@@ -222,49 +250,61 @@ nav {
 			font-size: 24px;
 			line-height: 26px;
 		}
+
 		p {
 			font-family: $font-family_3;
 			font-style: normal;
 			font-weight: 300;
 			font-size: 20px;
 		}
+
 		img {
 			margin-left: 100px;
 			margin-bottom: 20px;
 		}
+
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
+
 		div {
 			h3 {
 				margin-bottom: 25px;
 				text-align: start;
 			}
+
 			width: 635px;
 			text-align: justify;
 			margin: 75px;
 		}
 	}
 }
+
 footer {
 	width: 100%;
 	background-color: $background-color_2;
+
 	section {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
 		span {
 			color: $color_1;
 			margin-top: 15px;
 		}
+
 		div {
-			img {
-				margin-left: 25px;
-			}
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			padding: .625rem;
+			justify-content: center;
 		}
 	}
 }
+
 .contactenos {
 	margin: 15px 40px;
 	text-decoration: none;
@@ -274,6 +314,7 @@ footer {
 	font-size: 16px;
 	font-weight: 400;
 }
+
 .colecciones {
 	h2 {
 		text-align: center;
@@ -283,6 +324,7 @@ footer {
 		font-weight: 800;
 		font-size: 36px;
 	}
+
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -290,9 +332,11 @@ footer {
 	background-color: $background-color_4;
 	width: 100%;
 }
+
 .colecciones2 {
 	width: 100%;
 }
+
 .invierno {
 	display: flex;
 	width: auto;
@@ -302,11 +346,13 @@ footer {
 	background-color: $background-color_6;
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 25px;
+
 	.inviernoimg {
 		display: flex;
 		gap: 15px;
 	}
 }
+
 .invierno2 {
 	display: flex;
 	flex-direction: column;
@@ -315,6 +361,7 @@ footer {
 	align-items: center;
 	align-content: center;
 	text-align: justify;
+
 	h3 {
 		align-self: end;
 		padding: 0px 10px 20px 10px;
@@ -323,6 +370,7 @@ footer {
 		font-weight: 800;
 		font-size: 20px;
 	}
+
 	p {
 		text-align: justify;
 		padding: 0px 10px 10px 10px;
@@ -332,12 +380,14 @@ footer {
 		font-size: 1.25rem;
 	}
 }
+
 .inviernoimg {
 	img {
 		object-fit: cover;
 		border-radius: 25px;
 	}
 }
+
 .primavera {
 	display: flex;
 	width: auto;
@@ -347,39 +397,48 @@ footer {
 	box-shadow: 10px 10px 5px grey;
 	border-radius: 25px;
 	background-color: $background-color_7;
+
 	.inviernoimg {
 		display: flex;
 		gap: 15px;
 	}
+
 	h3 {
 		text-align: left;
 	}
+
 	p {
 		text-align: left;
 	}
 }
+
 .accesorios {
+	padding: 1.5rem;
 	background-color: $background-color_3;
 	width: 100%;
+
 	h2 {
+		padding-bottom: 1.25rem;
 		text-align: center;
-		padding-top: 20px;
 		font-family: $font-family_2;
 		font-style: normal;
 		font-weight: 800;
 		font-size: 36px;
 	}
 }
+
 .accesorios2 {
 	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	grid-template-rows: repeat(2,1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	align-items: center;
 	justify-items: center;
+
 	div {
 		background-color: $background-color_1;
 		border: 2px solid black;
 		border-radius: 25px;
+
 		h3 {
 			text-align: center;
 			font-family: $font-family_2;
@@ -390,11 +449,14 @@ footer {
 		}
 	}
 }
+
 .destacados {
 	width: 100%;
 }
+
 .mainDestacados {
 	background-color: $background-color_3;
+
 	h2 {
 		text-align: center;
 		padding-top: 20px;
@@ -404,6 +466,7 @@ footer {
 		font-size: 36px;
 	}
 }
+
 .destacadosmain {
 	display: flex;
 	flex-direction: row;
@@ -412,33 +475,42 @@ footer {
 	align-items: center;
 	gap: 80px;
 	padding: 50px;
+
 	article {
 		height: fit-content;
+
 		div {
 			height: fit-content;
 			align-items: center;
 			padding: 0;
+
 			button {
 				margin: 12px;
 			}
 		}
 	}
 }
+
 .fondo {
-	display: flex;
+	overflow: auto;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
 	background-image: url(../assets/img/sobrenosotros/background.png);
+
 	h2 {
 		background-color: $background-color_8;
 		border-radius: 55px;
 		color: $color_1;
-		margin: 25px;
-		display: flex;
-		justify-content: center;
+		margin: 1.5rem;
+		text-align: center;
+		font-family: "Italiana";
+		font-style: normal;
+		font-weight: 800;
+		font-size: 36px;
 	}
 }
+
 .articulos {
 	article {
 		display: flex;
@@ -446,8 +518,13 @@ footer {
 		color: $color_1;
 		background-color: $background-color_8;
 		margin: 75px;
-		width: fit-content;
 		border-radius: 55px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+		}
+
 		p {
 			margin: 25px;
 			text-align: center;
@@ -459,6 +536,7 @@ footer {
 		}
 	}
 }
+
 @media (max-width:1440px) {
 	nav {
 		div {
@@ -467,11 +545,13 @@ footer {
 			}
 		}
 	}
+
 	.ropaParaTi {
 		margin-right: 0;
 		padding-left: 0;
 	}
 }
+
 @media (max-width:1250px) {
 	nav {
 		div {
@@ -480,19 +560,23 @@ footer {
 		}
 	}
 }
+
 @media (max-width:1080px) {
 	nav {
 		div {
 			ul {
 				gap: 50px;
 			}
+
 			padding: 0;
 		}
 	}
+
 	.ropaParaTi {
 		margin-right: 0;
 		padding-left: 0;
 	}
+
 	.seccion2 {
 		.topDesings {
 			flex-wrap: wrap;
@@ -501,6 +585,7 @@ footer {
 		}
 	}
 }
+
 @media (max-width:940px) {
 	nav {
 		ul {
@@ -511,26 +596,35 @@ footer {
 			}
 		}
 	}
+
 	.seccion3 {
 		article {
 			flex-direction: column;
+
 			div {
 				margin-top: 0;
 			}
 		}
 	}
+
 	.accesorios2 {
-		grid-template-columns: repeat(1,1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-template-columns: 100%;
 		gap: 30px;
 		padding: 10px;
 	}
+
 	.invierno2 {
 		p {
 			font-size: 17px;
 		}
 	}
+
+	.articulos article p {
+		font-size: 20px;
+	}
 }
+
 @media (max-width:880px) {
 	nav {
 		div {
@@ -540,6 +634,7 @@ footer {
 		}
 	}
 }
+
 @media (max-width:768px) {
 	nav {
 		div {
@@ -548,44 +643,54 @@ footer {
 			}
 		}
 	}
+
 	.ropaParaTi {
 		margin-right: 0;
 		align-self: center;
 		padding-left: 0;
 	}
+
 	.parrafo {
 		grid-column: 1 / 4;
 		margin: 20px;
 	}
+
 	.boton {
 		margin: 20px;
 	}
+
 	.destacadosmain {
 		gap: 20px;
 	}
 }
+
 @media (max-width:720px) {
 	h1 {
 		width: auto;
 	}
+
 	header {
 		width: 100%;
 		position: fixed;
 	}
+
 	nav {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-around;
 		background-color: $background-color_1;
+
 		div {
 			display: none;
+
 			ul {
 				flex-direction: column;
 				align-items: center;
 				padding: 10px 0;
 			}
 		}
+
 		.menu {
 			flex-direction: column;
 			width: 100%;
@@ -594,14 +699,17 @@ footer {
 			display: none;
 			background-color: $background-color_2;
 		}
+
 		label {
 			display: inline-flex;
 			cursor: pointer;
+
 			img {
 				width: 100%;
 				object-fit: contain;
 			}
 		}
+
 		#toggle {
 			&:checked {
 				~ {
@@ -613,52 +721,59 @@ footer {
 			}
 		}
 	}
+
 	main {
 		padding-top: 85px;
 	}
+
 	.seccion3 {
 		article {
 			img {
 				margin: 0;
 			}
+
 			div {
 				width: fit-content;
 				margin: 40px;
 			}
 		}
 	}
+
 	.destacadosmain {
 		padding: 0;
 		gap: 0;
+
 		.card {
 			margin-inline: 15px;
 		}
 	}
+
 	.accesorios2 {
-		grid-template-columns: 200px;
+
 		gap: 20px;
 		padding: 10px;
-		div {
-			object-fit: cover;
-		}
 	}
+
 	.invierno {
 		flex-direction: column;
 		align-items: center;
 		gap: 15px;
 		margin: 20px;
 	}
+
 	.invierno2 {
 		h3 {
 			align-self: center;
 		}
 	}
+
 	.primavera {
 		flex-direction: column;
 		align-items: center;
 		gap: 15px;
 		margin: 30px;
 	}
+
 	footer {
 		section {
 			flex-direction: column;
@@ -666,9 +781,43 @@ footer {
 			padding-top: 10px;
 		}
 	}
+	.fondo{
+		h2{
+			font-size: 28px;
+		}
+	}
+	.articulos {
+		article {
+			flex-wrap: wrap;
+			flex-direction: column;
+			margin: 40px;
+			p {
+				font-size: 17px;
+			}
+		}
+	}
 }
-@media (max-width:424px) {
+
+@media (max-width:500px) {
 	.inviernoimg {
 		flex-direction: column;
+	}
+
+	.accesorios2 {
+
+		div {
+			width: 100%;
+			overflow: hidden;
+		}
+	}
+	.articulos {
+		article {
+			margin: 20px;
+		}
+	}
+	.fondo{
+		h2{
+			font-size: 24px;
+		}
 	}
 }
