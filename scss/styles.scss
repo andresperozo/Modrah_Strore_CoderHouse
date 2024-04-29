@@ -281,17 +281,21 @@ nav {
 		}
 	}
 }
+
 footer {
 	width: 100%;
 	background-color: $background-color_2;
+
 	section {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
 		span {
 			color: $color_1;
 			margin-top: 15px;
 		}
+
 		div {
 			display: flex;
 			flex-wrap: wrap;
@@ -301,6 +305,7 @@ footer {
 		}
 	}
 }
+
 .contactenos {
 	margin: 15px 40px;
 	text-decoration: none;
@@ -310,6 +315,7 @@ footer {
 	font-size: 16px;
 	font-weight: 400;
 }
+
 .colecciones {
 	h2 {
 		text-align: center;
@@ -319,10 +325,12 @@ footer {
 		font-weight: 800;
 		font-size: 36px;
 	}
-	.secSummer{
+
+	.secSummer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		article{
+
+		article {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -330,8 +338,8 @@ footer {
 			padding: 50px;
 			gap: 20px;
 			justify-content: space-evenly;
-			
-			h3{
+
+			h3 {
 				color: rgb(46, 46, 46);
 				font-size: 3rem;
 				text-align: center;
@@ -344,7 +352,8 @@ footer {
 				font-weight: 700;
 				font-style: normal;
 			}
-			p{
+
+			p {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -357,9 +366,10 @@ footer {
 				tab-size: 4;
 				text-size-adjust: 100%;
 				padding-inline: 100px;
-				
+
 			}
-			button{
+
+			button {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -378,27 +388,32 @@ footer {
 				padding-top: 20px;
 				padding-right: 14px;
 				padding-bottom: 20px;
-				&:hover{
+
+				&:hover {
 					transition: 0.5s;
 					background-color: black;
 					color: white;
 				}
 			}
-			img{
+
+			img {
 				object-fit: contain;
 				height: 50%;
 			}
 		}
-		img{
+
+		img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
 		}
 	}
-	.secNight{
+
+	.secNight {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		article{
+
+		article {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -406,8 +421,8 @@ footer {
 			padding: 50px;
 			gap: 20px;
 			justify-content: space-evenly;
-			
-			h3{
+
+			h3 {
 				color: white;
 				font-size: 3rem;
 				text-align: center;
@@ -420,7 +435,8 @@ footer {
 				font-weight: 700;
 				font-style: normal;
 			}
-			p{
+
+			p {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -434,9 +450,10 @@ footer {
 				text-size-adjust: 100%;
 				padding-inline: 100px;
 				color: white;
-				
+
 			}
-			button{
+
+			button {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -455,27 +472,32 @@ footer {
 				padding-top: 20px;
 				padding-right: 14px;
 				padding-bottom: 20px;
-				&:hover{
+
+				&:hover {
 					transition: 0.5s;
 					background-color: black;
 					color: white;
 				}
 			}
-			img{
+
+			img {
 				object-fit: contain;
 				height: 50%;
 			}
 		}
-		img{
+
+		img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
 		}
 	}
-	.secOcean{
+
+	.secOcean {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		article{
+
+		article {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -483,8 +505,8 @@ footer {
 			padding: 50px;
 			gap: 20px;
 			justify-content: space-evenly;
-			
-			h3{
+
+			h3 {
 				color: black;
 				font-size: 3rem;
 				text-align: center;
@@ -497,7 +519,8 @@ footer {
 				font-weight: 700;
 				font-style: normal;
 			}
-			p{
+
+			p {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -511,9 +534,10 @@ footer {
 				text-size-adjust: 100%;
 				padding-inline: 100px;
 				color: black;
-				
+
 			}
-			button{
+
+			button {
 				font-family: "Lato", sans-serif;
 				font-weight: 400;
 				font-style: normal;
@@ -532,23 +556,26 @@ footer {
 				padding-top: 20px;
 				padding-right: 14px;
 				padding-bottom: 20px;
-				&:hover{
+
+				&:hover {
 					transition: 0.5s;
 					background-color: black;
 					color: white;
 				}
 			}
-			img{
+
+			img {
 				object-fit: contain;
 				height: 50%;
 			}
 		}
-		img{
+
+		img {
 			height: 100%;
 			width: 100%;
 			object-fit: cover;
 		}
-	}	
+	}
 }
 
 .accesorios {
@@ -631,6 +658,11 @@ footer {
 }
 
 .fondo {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 86vh;
 	overflow: auto;
 	background-size: cover;
 	background-position: center center;
@@ -638,41 +670,133 @@ footer {
 	background-image: url(../assets/img/sobrenosotros/background.png);
 
 	h2 {
-		background-color: $background-color_8;
-		border-radius: 55px;
-		color: $color_1;
-		margin: 1.5rem;
+		background-color: rgba(215, 125, 181, 0.388);
+		color: black;
+		padding: 0 25px 0 25px;
 		text-align: center;
-		font-family: "Italiana";
+		font-family: "Lato", sans-serif;
 		font-style: normal;
-		font-weight: 800;
-		font-size: 36px;
+		font-weight: 700;
+		font-size: 4rem;
+	}
+
+	button {
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: black;
+		background-color: white;
+		border-width: 1px;
+		border-style: solid;
+		cursor: pointer;
+		transition: 0.5s;
+		font-size: 14px;
+		text-align: center;
+		font-weight: 700;
+		letter-spacing: 1px;
+		width: 150px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		&:hover {
+			transition: 0.5s;
+			background-color: black;
+			color: white;
+		}
 	}
 }
 
-.articulos {
-	article {
+.nuestrosPilares {
+	text-align: center;
+	background-color: rgba(215, 125, 181, 0.388);
+	color: #2e2e2e;
+	font-size: 2rem;
+	letter-spacing: 0.3px;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	padding: 25px;
+}
+
+.snPilares {
+	background-color: rgba(215, 125, 181, 0.388);
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-bottom: 25px;
+	text-align: center;
+
+	div {
+
+		border-style: solid;
+		border-width: 0px 1px 0px 1px;
+		border-color: #000000;
+		transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 		display: flex;
-		flex-direction: row;
-		color: $color_1;
-		background-color: $background-color_8;
-		margin: 75px;
-		border-radius: 55px;
-		overflow: hidden;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 0 50px 0 50px;
+
+		h4 {
+			color: #2e2e2e;
+			font-size: 1.5rem;
+			letter-spacing: 0.3px;
+			font-family: "Lato", sans-serif;
+			font-weight: 700;
+			border-bottom: 2px solid black;
+			margin-bottom: 20px;
+			align-self: normal;
+		}
 
 		img {
-			object-fit: cover;
+			width: 80%;
+			height: 80%;
 		}
 
 		p {
-			margin: 25px;
-			text-align: center;
-			padding-top: 20px;
-			font-family: $font-family_2;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 24px;
+			margin: 20px;
+			color: #2e2e2e;
+			font-size: 15px;
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
 		}
+	}
+}
+
+.snSeccion2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	background-color: rgba(195, 84, 152, 0.477);
+
+	div {
+		text-align: center;
+		padding: 50px;
+		margin: 50px;
+
+		h4 {
+			color: #2e2e2e;
+			font-size: 56px;
+			font-family: "Lato", sans-serif;
+			font-weight: 700;
+		}
+
+		p {
+			color: #2e2e2e;
+			font-size: 24px;
+			font-family: "Lato", sans-serif;
+			font-weight: 400;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
 	}
 }
 
@@ -723,29 +847,32 @@ footer {
 			margin-inline: 20px;
 		}
 	}
-	.colecciones{
+
+	.colecciones {
 		.secSummer {
-			article{
-				p{
+			article {
+				p {
 					padding: 0;
 				}
 			}
 		}
-		.secNight{
-			article{
-				p{
+
+		.secNight {
+			article {
+				p {
 					padding: 0;
 				}
 			}
 		}
-		.secOcean{
-			article{
-				p{
+
+		.secOcean {
+			article {
+				p {
 					padding: 0;
 				}
 			}
 		}
-		
+
 	}
 }
 
@@ -825,30 +952,45 @@ footer {
 	.destacadosmain {
 		gap: 20px;
 	}
-	.colecciones{
-		.secSummer{
-			article{
+
+	.colecciones {
+		.secSummer {
+			article {
 				padding: 15px;
-				h3{
+
+				h3 {
 					font-size: 2.25rem;
 				}
-			}	
+			}
 		}
-		.secNight{
-			article{
+
+		.secNight {
+			article {
 				padding: 15px;
-				h3{
+
+				h3 {
 					font-size: 2.25rem;
 				}
-			}	
+			}
 		}
-		.secOcean{
-			article{
+
+		.secOcean {
+			article {
 				padding: 15px;
-				h3{
+
+				h3 {
 					font-size: 2.25rem;
 				}
-			}	
+			}
+		}
+	}
+	.snPilares{
+		flex-direction: column;
+		div{
+			img{
+				width: 50%;
+				height: 50%;
+			}
 		}
 	}
 }
@@ -869,7 +1011,7 @@ footer {
 		align-items: center;
 		justify-content: space-around;
 		background-color: $background-color_1;
-		
+
 
 		div {
 			display: none;
@@ -878,7 +1020,7 @@ footer {
 				flex-direction: column;
 				align-items: center;
 				padding: 10px 0;
-				
+
 			}
 		}
 
@@ -972,26 +1114,33 @@ footer {
 			padding-top: 10px;
 		}
 	}
-	.fondo{
-		h2{
-			font-size: 28px;
+
+	.fondo {
+		h2 {
+			font-size: 48px;
 		}
 	}
+
 	.articulos {
 		article {
 			flex-wrap: wrap;
 			flex-direction: column;
 			margin: 40px;
+
 			p {
 				font-size: 17px;
 			}
 		}
 	}
-	.colecciones{
-		h2{
+
+	.colecciones {
+		h2 {
 			background-color: black;
 			color: white;
 		}
+	}
+	.snSeccion2{
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
@@ -1007,28 +1156,46 @@ footer {
 			overflow: hidden;
 		}
 	}
+
 	.articulos {
 		article {
 			margin: 20px;
 		}
 	}
-	.fondo{
-		h2{
-			font-size: 24px;
+
+	.fondo {
+		h2 {
+			font-size: 2rem;
 		}
 	}
-	.colecciones{
-		.secSummer{
+
+	.colecciones {
+		.secSummer {
 			display: flex;
 			flex-wrap: wrap;
 		}
-		.secNight{
+
+		.secNight {
 			display: flex;
 			flex-wrap: wrap-reverse;
 		}
-		.secOcean{
+
+		.secOcean {
 			display: flex;
 			flex-wrap: wrap;
+		}
+	}
+	.snPilares{
+		div{
+			img{
+				width: 80%;
+				height: 80%;
+			}
+		}
+	}
+	.snSeccion2{
+		div{
+			margin: 0;
 		}
 	}
 }

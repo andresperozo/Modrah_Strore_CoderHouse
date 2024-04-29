@@ -505,40 +505,119 @@ footer {
         margin: 12px; }
 
 .fondo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 86vh;
   overflow: auto;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-image: url(../assets/img/sobrenosotros/background.png); }
   .fondo h2 {
-    background-color: #2f2f2f76;
-    border-radius: 55px;
-    color: white;
-    margin: 1.5rem;
+    background-color: rgba(215, 125, 181, 0.388);
+    color: black;
+    padding: 0 25px 0 25px;
     text-align: center;
-    font-family: "Italiana";
+    font-family: "Lato", sans-serif;
     font-style: normal;
-    font-weight: 800;
-    font-size: 36px; }
+    font-weight: 700;
+    font-size: 4rem; }
+  .fondo button {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .fondo button:hover {
+      transition: 0.5s;
+      background-color: black;
+      color: white; }
 
-.articulos article {
+.nuestrosPilares {
+  text-align: center;
+  background-color: rgba(215, 125, 181, 0.388);
+  color: #2e2e2e;
+  font-size: 2rem;
+  letter-spacing: 0.3px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  padding: 25px; }
+
+.snPilares {
+  background-color: rgba(215, 125, 181, 0.388);
+  width: 100%;
   display: flex;
   flex-direction: row;
-  color: white;
-  background-color: #2f2f2f76;
-  margin: 75px;
-  border-radius: 55px;
-  overflow: hidden; }
-  .articulos article img {
-    object-fit: cover; }
-  .articulos article p {
-    margin: 25px;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+  text-align: center; }
+  .snPilares div {
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: #000000;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 50px 0 50px; }
+    .snPilares div h4 {
+      color: #2e2e2e;
+      font-size: 1.5rem;
+      letter-spacing: 0.3px;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      border-bottom: 2px solid black;
+      margin-bottom: 20px;
+      align-self: normal; }
+    .snPilares div img {
+      width: 80%;
+      height: 80%; }
+    .snPilares div p {
+      margin: 20px;
+      color: #2e2e2e;
+      font-size: 15px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400; }
+
+.snSeccion2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: rgba(195, 84, 152, 0.477); }
+  .snSeccion2 div {
     text-align: center;
-    padding-top: 20px;
-    font-family: "Italiana";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px; }
+    padding: 50px;
+    margin: 50px; }
+    .snSeccion2 div h4 {
+      color: #2e2e2e;
+      font-size: 56px;
+      font-family: "Lato", sans-serif;
+      font-weight: 700; }
+    .snSeccion2 div p {
+      color: #2e2e2e;
+      font-size: 24px;
+      font-family: "Lato", sans-serif;
+      font-weight: 400; }
+  .snSeccion2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 @media (max-width: 1440px) {
   nav div ul {
@@ -617,7 +696,12 @@ footer {
   .colecciones .secOcean article {
     padding: 15px; }
     .colecciones .secOcean article h3 {
-      font-size: 2.25rem; } }
+      font-size: 2.25rem; }
+  .snPilares {
+    flex-direction: column; }
+    .snPilares div img {
+      width: 50%;
+      height: 50%; } }
 
 @media (max-width: 720px) {
   h1 {
@@ -685,7 +769,7 @@ footer {
     align-items: center;
     padding-top: 10px; }
   .fondo h2 {
-    font-size: 28px; }
+    font-size: 48px; }
   .articulos article {
     flex-wrap: wrap;
     flex-direction: column;
@@ -694,7 +778,9 @@ footer {
       font-size: 17px; }
   .colecciones h2 {
     background-color: black;
-    color: white; } }
+    color: white; }
+  .snSeccion2 {
+    grid-template-columns: repeat(1, 1fr); } }
 
 @media (max-width: 500px) {
   .inviernoimg {
@@ -705,7 +791,7 @@ footer {
   .articulos article {
     margin: 20px; }
   .fondo h2 {
-    font-size: 24px; }
+    font-size: 2rem; }
   .colecciones .secSummer {
     display: flex;
     flex-wrap: wrap; }
@@ -714,4 +800,9 @@ footer {
     flex-wrap: wrap-reverse; }
   .colecciones .secOcean {
     display: flex;
-    flex-wrap: wrap; } }
+    flex-wrap: wrap; }
+  .snPilares div img {
+    width: 80%;
+    height: 80%; }
+  .snSeccion2 div {
+    margin: 0; } }
