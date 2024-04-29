@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import "https://fonts.googleapis.com/css2?family=Italiana&family=Koulen&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Kosugi&display=swap";
 * {
@@ -232,80 +233,216 @@ footer {
   font-size: 16px;
   font-weight: 400; }
 
-.colecciones {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #FFDBF1;
-  width: 100%; }
-  .colecciones h2 {
-    text-align: center;
-    padding-top: 20px;
-    font-family: "Italiana";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px; }
+.colecciones h2 {
+  text-align: center;
+  padding: 20px;
+  font-family: "Italiana";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px; }
 
-.colecciones2 {
-  width: 100%; }
-
-.invierno {
-  display: flex;
-  width: auto;
-  height: auto;
-  padding: 15px;
-  margin: 3.125rem;
-  background-color: #AABFC6;
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 25px; }
-  .invierno .inviernoimg {
+.colecciones .secSummer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .colecciones .secSummer article {
     display: flex;
-    gap: 15px; }
+    flex-direction: column;
+    align-items: center;
+    background-color: #ce855e7e;
+    padding: 50px;
+    gap: 20px;
+    justify-content: space-evenly; }
+    .colecciones .secSummer article h3 {
+      color: #2e2e2e;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 700;
+      text-size-adjust: 100%;
+      letter-spacing: 0.3px;
+      line-height: 64px;
+      tab-size: 4;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-style: normal; }
+    .colecciones .secSummer article p {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      font-size: 14px;
+      font-stretch: 100%;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 20px;
+      tab-size: 4;
+      text-size-adjust: 100%;
+      padding-inline: 100px; }
+    .colecciones .secSummer article button {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+      background-color: white;
+      border-width: 1px;
+      border-style: solid;
+      cursor: pointer;
+      transition: 0.5s;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      width: 240px;
+      padding-left: 14px;
+      padding-top: 20px;
+      padding-right: 14px;
+      padding-bottom: 20px; }
+      .colecciones .secSummer article button:hover {
+        transition: 0.5s;
+        background-color: black;
+        color: white; }
+    .colecciones .secSummer article img {
+      object-fit: contain;
+      height: 50%; }
+  .colecciones .secSummer img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
-.invierno2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  text-align: justify; }
-  .invierno2 h3 {
-    align-self: end;
-    padding: 0px 10px 20px 10px;
-    font-family: "Italiana";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 20px; }
-  .invierno2 p {
-    text-align: justify;
-    padding: 0px 10px 10px 10px;
-    font-family: "Italiana";
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1.25rem; }
-
-.inviernoimg img {
-  object-fit: cover;
-  border-radius: 25px; }
-
-.primavera {
-  display: flex;
-  width: auto;
-  height: auto;
-  padding: 15px;
-  margin: 3.125rem;
-  box-shadow: 10px 10px 5px grey;
-  border-radius: 25px;
-  background-color: #EBA5AD; }
-  .primavera .inviernoimg {
+.colecciones .secNight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .colecciones .secNight article {
     display: flex;
-    gap: 15px; }
-  .primavera h3 {
-    text-align: left; }
-  .primavera p {
-    text-align: left; }
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.743);
+    padding: 50px;
+    gap: 20px;
+    justify-content: space-evenly; }
+    .colecciones .secNight article h3 {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 700;
+      text-size-adjust: 100%;
+      letter-spacing: 0.3px;
+      line-height: 64px;
+      tab-size: 4;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-style: normal; }
+    .colecciones .secNight article p {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      font-size: 14px;
+      font-stretch: 100%;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 20px;
+      tab-size: 4;
+      text-size-adjust: 100%;
+      padding-inline: 100px;
+      color: white; }
+    .colecciones .secNight article button {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+      background-color: white;
+      border-width: 1px;
+      border-style: solid;
+      cursor: pointer;
+      transition: 0.5s;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      width: 240px;
+      padding-left: 14px;
+      padding-top: 20px;
+      padding-right: 14px;
+      padding-bottom: 20px; }
+      .colecciones .secNight article button:hover {
+        transition: 0.5s;
+        background-color: black;
+        color: white; }
+    .colecciones .secNight article img {
+      object-fit: contain;
+      height: 50%; }
+  .colecciones .secNight img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.colecciones .secOcean {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .colecciones .secOcean article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 66, 117, 0.438);
+    padding: 50px;
+    gap: 20px;
+    justify-content: space-evenly; }
+    .colecciones .secOcean article h3 {
+      color: black;
+      font-size: 3rem;
+      text-align: center;
+      font-weight: 700;
+      text-size-adjust: 100%;
+      letter-spacing: 0.3px;
+      line-height: 64px;
+      tab-size: 4;
+      font-family: "Lato", sans-serif;
+      font-weight: 700;
+      font-style: normal; }
+    .colecciones .secOcean article p {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+      font-size: 14px;
+      font-stretch: 100%;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 20px;
+      tab-size: 4;
+      text-size-adjust: 100%;
+      padding-inline: 100px;
+      color: black; }
+    .colecciones .secOcean article button {
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+      background-color: white;
+      border-width: 1px;
+      border-style: solid;
+      cursor: pointer;
+      transition: 0.5s;
+      font-size: 14px;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 1px;
+      width: 240px;
+      padding-left: 14px;
+      padding-top: 20px;
+      padding-right: 14px;
+      padding-bottom: 20px; }
+      .colecciones .secOcean article button:hover {
+        transition: 0.5s;
+        background-color: black;
+        color: white; }
+    .colecciones .secOcean article img {
+      object-fit: contain;
+      height: 50%; }
+  .colecciones .secOcean img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .accesorios {
   padding: 1.5rem;
@@ -426,7 +563,13 @@ footer {
   .seccion2 .topDesings {
     flex-wrap: wrap;
     gap: 20px;
-    margin-inline: 20px; } }
+    margin-inline: 20px; }
+  .colecciones .secSummer article p {
+    padding: 0; }
+  .colecciones .secNight article p {
+    padding: 0; }
+  .colecciones .secOcean article p {
+    padding: 0; } }
 
 @media (max-width: 940px) {
   nav ul li a {
@@ -462,7 +605,19 @@ footer {
   .boton {
     margin: 20px; }
   .destacadosmain {
-    gap: 20px; } }
+    gap: 20px; }
+  .colecciones .secSummer article {
+    padding: 15px; }
+    .colecciones .secSummer article h3 {
+      font-size: 2.25rem; }
+  .colecciones .secNight article {
+    padding: 15px; }
+    .colecciones .secNight article h3 {
+      font-size: 2.25rem; }
+  .colecciones .secOcean article {
+    padding: 15px; }
+    .colecciones .secOcean article h3 {
+      font-size: 2.25rem; } }
 
 @media (max-width: 720px) {
   h1 {
@@ -536,7 +691,10 @@ footer {
     flex-direction: column;
     margin: 40px; }
     .articulos article p {
-      font-size: 17px; } }
+      font-size: 17px; }
+  .colecciones h2 {
+    background-color: black;
+    color: white; } }
 
 @media (max-width: 500px) {
   .inviernoimg {
@@ -547,4 +705,13 @@ footer {
   .articulos article {
     margin: 20px; }
   .fondo h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .colecciones .secSummer {
+    display: flex;
+    flex-wrap: wrap; }
+  .colecciones .secNight {
+    display: flex;
+    flex-wrap: wrap-reverse; }
+  .colecciones .secOcean {
+    display: flex;
+    flex-wrap: wrap; } }
